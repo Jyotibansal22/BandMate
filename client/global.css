@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Tailwind CSS theme
+   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
+   * A different format will require also updating the theme in tailwind.config.ts.
+  */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 230 84% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 230 84% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 230 84% 15%;
+
+    --primary: 230 84% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 180 25% 95%;
+    --secondary-foreground: 200 85% 20%;
+
+    --muted: 180 15% 96%;
+    --muted-foreground: 200 20% 50%;
+
+    --accent: 175 60% 88%;
+    --accent-foreground: 200 85% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 180 30% 90%;
+    --input: 180 30% 90%;
+    --ring: 200 95% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 200 100% 98%;
+    --sidebar-foreground: 200 85% 20%;
+    --sidebar-primary: 200 95% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 180 60% 88%;
+    --sidebar-accent-foreground: 200 85% 20%;
+    --sidebar-border: 180 30% 90%;
+    --sidebar-ring: 200 95% 50%;
+
+    /* IELTS Professional Color Scheme */
+    --ielts-navy: 230 84% 27%;        /* Navy Blue #1E3A8A */
+    --ielts-blue: 217 91% 60%;        /* Royal Blue #2563EB */
+    --ielts-green: 160 84% 39%;       /* Emerald Green #10B981 */
+    --ielts-amber: 43 96% 56%;        /* Amber Yellow #F59E0B */
+    --ielts-red: 0 84% 60%;           /* Error Red #EF4444 */
+    --ielts-orange: 24 95% 53%;       /* Cautionary Orange #FB923C */
+    --ielts-light-gray: 210 20% 96%;  /* Light Gray #F3F4F6 */
+    --ielts-dark-gray: 212 35% 32%;   /* Dark Gray #374151 */
+  }
+
+  .dark {
+    --background: 230 25% 8%;
+    --foreground: 180 30% 95%;
+
+    --card: 230 25% 10%;
+    --card-foreground: 180 30% 95%;
+
+    --popover: 230 25% 10%;
+    --popover-foreground: 180 30% 95%;
+
+    --primary: 200 95% 55%;
+    --primary-foreground: 230 25% 8%;
+
+    --secondary: 230 20% 15%;
+    --secondary-foreground: 180 30% 95%;
+
+    --muted: 230 20% 15%;
+    --muted-foreground: 180 15% 65%;
+
+    --accent: 230 20% 18%;
+    --accent-foreground: 180 30% 95%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 180 30% 95%;
+
+    --border: 230 20% 18%;
+    --input: 230 20% 18%;
+    --ring: 200 95% 55%;
+    --sidebar-background: 230 25% 8%;
+    --sidebar-foreground: 180 30% 95%;
+    --sidebar-primary: 200 95% 55%;
+    --sidebar-primary-foreground: 230 25% 8%;
+    --sidebar-accent: 230 20% 15%;
+    --sidebar-accent-foreground: 180 30% 95%;
+    --sidebar-border: 230 20% 18%;
+    --sidebar-ring: 200 95% 55%;
+
+    /* IELTS Professional Color Scheme - Dark Mode */
+    --ielts-navy: 230 84% 35%;        /* Lighter Navy for dark mode */
+    --ielts-blue: 217 91% 65%;        /* Lighter Royal Blue */
+    --ielts-green: 160 84% 45%;       /* Slightly lighter Emerald */
+    --ielts-amber: 43 96% 60%;        /* Brighter Amber for visibility */
+    --ielts-red: 0 84% 65%;           /* Lighter Error Red */
+    --ielts-orange: 24 95% 58%;       /* Brighter Orange */
+    --ielts-light-gray: 210 20% 20%;  /* Dark mode light gray */
+    --ielts-dark-gray: 210 20% 80%;   /* Dark mode text */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
