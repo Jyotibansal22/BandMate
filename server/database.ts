@@ -84,8 +84,10 @@ class DatabaseService {
     private seeder = new DatabaseSeeder();
 
     constructor() {
+    if (process.env.NODE_ENV !== "production") {
         this.seeder.initializeAndSeed();
     }
+}
 
     // --- USER METHODS ---
     async getUser(userId: string): Promise<UserProfile | null> {
