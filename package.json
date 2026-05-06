@@ -1,6 +1,10 @@
 {
   "name": "fusion-starter",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+
   "type": "module",
   "pkg": {
     "assets": [
